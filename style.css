@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn-start {
+  background-color: #ff6677;
+  color: #f2f2f2;
+  border: 1px solid #515151;
+  border-radius: 15px;
+  font-weight: bold;
+  margin: 15px auto;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+}
+.container {
+  width: 800px;
+  height: 900px;
+  border: 2px solid black;
+  margin: 15px auto;
+  box-shadow: 6px 6px 20px grey;
+  background-image: url("./logo/fondo.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+    "door9 door10 door11 door12"
+    "door8 door18 door19 door13"
+    "door1 door17 door24 door14"
+    "door23 door2 door15 door20"
+    "door7 door16 door3 door21"
+    "door6 door5 door4 door22";
+}
+
+.image {
+  background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text {
+  height: 100%;
+  width: 100%;
+  color: black;
+  padding: 10px;
+  border: 2px solid black;
+  transition: opacity 2.5s;
+}
